@@ -1,0 +1,294 @@
+html, body {
+    min-height: 100%;
+}
+:root{
+    --accent-color: rgb(11, 243,243);
+    --accent-rgb:11,243,243;
+    --basic-glowing:0 0 15px rgba(var(--accent-rgb), 0.2);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: "Geist", "Space Grotesk", sans-serif;
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(100, 50, 255, 0.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(30, 146, 255, 0.212),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(100, 50, 255, 0.15),
+            transparent 35%
+        ),
+        #050505f8;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+}
+#home-hero{
+    margin-top:10rem;
+}
+#Home{
+    scroll-margin-top: 500px;
+}
+#Focus{
+    scroll-margin-top:100px;
+}
+.important_text{
+    color:var(--accent-color);
+    text-shadow: 0 0 15px rgba(42, 245, 228, 0.4);
+    transition: 0.3s ease;
+}
+.important_text:hover{
+    text-shadow: 0 0 25px rgba(42, 245, 226, 0.6)
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    color:lightgrey;
+    font-weight: 300;
+    font-size: 14px;
+}
+.cool_text {
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 20px rgba(254, 255, 255, 0.4);
+    letter-spacing: 1px;
+    box-sizing:border-box;
+}
+.align_center{
+    text-align: center;
+}
+
+nav{
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position:fixed;
+    width: 85%;
+
+    padding:1rem 5%;
+    background: rgba(255, 255,255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 999px;
+
+    z-index: 1000;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:var(--accent-color);
+    letter-spacing: 1px;
+    text-shadow:0 0 20px rgba(30, 146, 255, 0.7);
+    transition: 0.2s;
+}
+.logo:hover{
+    text-shadow: 0 0 30px rgba(30, 146, 255, 5);
+}
+.nav-links{
+    list-style: none;
+    display:flex;
+    gap: 2rem;
+}
+.nav-links li a{
+    position:relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    transition: 0.3s ease;
+}
+.nav-links li a:hover{
+    color:var(--accent-color);
+    text-shadow: 0 0 10px rgb(47, 232, 245);
+}
+
+
+
+hr{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.288);
+    height:1px;
+    width: 80%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 5%;
+    box-sizing:border-box;
+}
+.card{
+    position:relative;
+    display: grid;
+    aspect-ratio: 3/4;
+    border-radius: 40px;
+    overflow:hidden;
+    grid-template-areas: "stack";
+    place-items: end;
+
+    text-decoration:none;
+    
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
+   
+}
+.card img{
+    grid-area:stack;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(0.80);
+    transition: transform 0.3s ease;
+}
+.card-overlay{
+    grid-area: stack;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    margin: 10px auto;
+
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 20px rgba(254, 255, 255, 0.6);
+    letter-spacing: 1px;
+    border-radius:40px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+
+.work-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:50px;
+}
+.glowing-btn{
+    font-size:1.5rem;
+    text-align:center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 20px rgba(254, 255, 255, 0.6);
+    letter-spacing: 1px;
+    border-radius:40px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    padding:1rem 15%;
+    transition:0.3s ease;
+}
+.glowing-btn:hover{
+    background-color: rgba(14, 204, 204, 0.103);
+    border-color:aqua;
+    box-shadow: 0 0 15px rgba(42, 245, 226, 0.7);
+     text-shadow: none;
+}
+
+.btn-container{
+    display:grid;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+    padding:5px 15%;
+}
+.simple-btn{
+    font-size:1.5rem;
+    text-align:center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 20px rgba(254, 255, 255, 0.6);
+    letter-spacing: 1px;
+    border-radius:40px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    padding:1rem 15%;
+    transition:0.3s ease;
+}
+.simple-btn:hover{
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
+.back-icon{
+    position:fixed;
+    width: 1.5rem;
+    top: 30px;
+    left: 5%;
+    padding: 1rem;
+    border-radius:100%;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.back-icon:hover{
+    background-color:rgba(0, 0, 0, 0.342);
+    backdrop-filter:blur(10px);
+}
+
+
+.glass-panel {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2.5rem;
+  transition: 0.3s ease;
+}
+
+.glass-panel:hover{
+    border:2px solid rgba(var(--accent-rgb), 0.4);
+    box-shadow: 0 0 5px rgba(var(--accent-rgb), 0.3);
+}
+
+
+@media (max-width: 1024px) { .card-container {grid-template-columns: repeat(2, 1fr); }}
+@media (max-width: 600px) { .card-container {grid-template-columns: 1fr; }}
+
+
+@media (max-width:1024px) {
+    .logo{
+        display:none
+    }
+    .nav-links{
+        margin:0 auto;
+        padding:0;
+    }
+    .glass-panel{
+        background-color: rgba(255, 255, 255, 0.021);
+    }
+}

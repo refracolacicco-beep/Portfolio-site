@@ -1,0 +1,178 @@
+body{
+    padding-top:6rem;
+}
+
+.arch-icon{
+    color: var(--accent-color);
+    width:5rem;
+    margin:0 2rem;
+    filter: drop-shadow(0 0 2px rgba(11, 243, 243, 0.671));
+}
+.linux-terminal{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    margin:auto;
+    padding: 1rem 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    font-family:"Fira Code";
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+
+.image-text-linux-terminal{
+    display:flex;
+    flex-direction:row;
+    gap: 5rem;
+    flex-wrap:wrap;
+}
+.linux-terminal-glowing{
+    color:var(--accent-color);
+    text-shadow:var(--basic-glowing);
+}
+.linux-informations{
+    display:flex;
+    gap:1.5rem;
+}
+.linux-card-icon{
+    color: var(--accent-color);
+    width:3rem;
+    filter:drop-shadow(var(--basic-glowing))
+}
+.card-container{
+    width:80%;
+    margin:auto;
+}
+.linux-card{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:15px 5%;
+}
+
+.card-container.desktop{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card.desktop{
+    aspect-ratio: 16/9;
+}
+.card a{
+    display:contents;
+}
+
+.timeline-container{
+    position:relative;
+    display:grid;
+    padding: 10px 3rem;
+    margin: 10px 10%;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    border-radius:2px;
+}
+.timeline-dot{
+    top:2.5rem;
+    left:calc(-3rem - 0.4rem);
+    position:absolute;
+    width:0.8rem;
+    height:0.8rem;
+    background-color: var(--accent-color);
+    border-radius:50%;
+    filter: drop-shadow(0 0 8px rgba(var(--accent-rgb), 0.6));
+}
+.timeline-container > div{
+    position:relative;
+    margin-bottom:2rem;
+    box-sizing:border-box;
+}
+
+.stats-bar-container{
+    display:flex;
+    width:80%;
+    margin:2rem auto;
+    padding:10px 3rem;
+    box-sizing:border-box;
+}
+.stat{
+    padding:10px 3rem;
+    box-sizing:border-box;
+    margin:auto;
+    text-align:center;
+    position:relative;
+    flex:1;
+}
+.stat-number{
+    margin:10px auto;
+}
+.stat p{
+    margin:10px auto;
+}
+
+.important_text.stat-number{
+    font-size:2rem;
+    font-weight:500;
+}
+.stat:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    height:60%;
+    width:2px;
+    top:0;
+    bottom:0;
+    margin: auto 0;
+    background-color: rgba(255, 255, 255, 0.15);
+}  
+
+@media (max-width:1024px){
+    h3{
+        font-size:medium;
+    }
+    .arch-icon{
+        display:none;
+    }
+    .basic-linux-terminal{
+        font-weight:500;
+        color:lightgrey;
+    }
+    .linux-card{
+        flex-direction: row;
+        gap:2rem;
+        padding:15px 2rem;
+        width:80%;
+    }
+    .card-container.linux{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding:0;
+        margin:1rem 0;
+    }
+    .card-container.desktop{
+        margin:0 auto;
+        align-items: center;
+        grid-template-columns: 1fr;
+        align-content:center;
+    }
+    .linux-card-icon{
+        width: 2rem;
+        height:2rem;
+    }
+
+    .stats-bar-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: "box1 box2" "box3 box3";
+        padding:0.5rem 0;
+    }
+    .stat{
+        margin:0;
+        padding:10px 1rem;
+    }
+    .stat:nth-child(2)::after{
+        top:100%;
+        height:2px;
+        width:200%;
+    }
+}
