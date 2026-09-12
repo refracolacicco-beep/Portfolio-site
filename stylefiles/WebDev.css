@@ -1,0 +1,235 @@
+
+body{ 
+    padding-top:5rem; 
+    font-family: "Geist", "Space Grotesk", -apple-system, sans-serif;
+} 
+
+p{ 
+    text-align:center; 
+} 
+
+section{ 
+    margin-bottom: 4rem; 
+} 
+.section-title{ 
+    margin-bottom:0.7rem; 
+} 
+.desktop{
+    display:none;
+}
+@media(min-width:1024px){
+    .desktop{
+        display:revert;
+    }
+    .mobile{
+        display:none;
+    }
+}
+section.hero h1{
+     margin-bottom:0; 
+} 
+section.hero .css-example{ 
+    padding:1rem 2%;
+    margin:2rem auto;
+    max-width:80%; 
+    font-weight:500; 
+    font-family: "Fira Code"; 
+    box-sizing: border-box; 
+} 
+
+
+section.stack ul{ 
+    display:flex; 
+    flex-direction:column; 
+    width:80%; 
+    gap:1rem; 
+    padding:0; 
+    margin:auto; 
+}
+section.stack .icon{ 
+    color: var(--accent-color); 
+    width:1.5rem; 
+    filter: drop-shadow( 0 0 5px rgba(var(--accent-rgb), 0.2)); 
+} 
+section.stack li{ 
+    display:flex; 
+    gap:1rem; 
+    width:100%; 
+    padding:0.5rem 5%; 
+    margin:0 auto; 
+    box-sizing:border-box;
+} 
+section.stack li:last-child{
+    display:none;
+}
+section.stack li h3{ 
+    margin-bottom:0; 
+    margin-top:0.2rem; 
+} 
+section.stack li p{ 
+    margin-top:0; 
+    margin-bottom:0.2rem; 
+    text-align: start; 
+} 
+
+@media(min-width:1024px) {
+    section.stack ul{
+        flex-direction: row;
+    }
+    section.stack li{
+        flex-direction: column;
+        align-items:center;
+        padding:2rem;
+    }
+    section.stack li:last-child{
+        display:flex;
+    }
+    section.stack .icon{
+        width:2.5rem;
+    }
+    section.stack .text, section.stack li p{
+        text-align:center;
+    }
+    section.stack li:hover{
+        transform:translateY(-0.2rem);
+    }
+}
+
+
+
+section.projects .card-container.mobile{ 
+    grid-template-columns: 1fr;
+    width:80%; 
+    margin:0 auto; 
+    padding:0.2rem 0;
+} 
+section.projects a{ 
+    text-decoration:none; 
+} 
+section.projects .card{
+    width:100%; 
+    aspect-ratio:16/9; 
+    border-radius:30px; 
+} 
+section.projects .card img:hover{ 
+    transform:none; 
+} 
+section.projects .card-overlay{ 
+    padding:0.2rem; 
+    border-radius:30px; 
+} 
+section.projects .card-overlay h3, section.projects .card-overlay p{ 
+    margin:0;
+}
+
+@media(min-width:1024px){
+    section.projects .project-container.desktop{
+        display:grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        width:80%;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin:0 auto;
+        padding:0;
+    }
+    section.projects .project-container.desktop img{
+        grid-column:1;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        display:block;
+    }
+    section.projects .text{
+        grid-column:2;
+    }
+    section.projects .text{
+        display:flex;
+        flex-direction: column;
+        padding:2rem;
+        gap:2rem;
+    }
+    section.projects .text p, 
+    section.projects .text h2, 
+    section.projects .text h3{
+        margin:0;
+        text-align:start;
+    }
+    section.projects .whatsit{
+        padding:0 0.5rem;
+    }
+    section.projects .text p{
+        line-height: 1.6;
+        letter-spacing:0.01rem;
+    }
+    section.projects .tags{
+        font-family: "Fira Code";
+        letter-spacing:unset;
+    }
+    section.projects .tags .tag{
+        font-size:0.7rem;
+        display:inline-block;
+        border:1px solid rgba(255, 255, 255, 0.1);
+        border-radius:0.6rem;
+        text-align: center;
+        padding:0.3rem 0.6rem;
+        box-sizing:border-box;
+    }
+    section.projects .btn.glowing-cyan-btn{
+        font-weight: 600;
+    }
+    section.projects .btn.glowing-cyan-btn:hover{
+        box-shadow:0 0 20px rgba(var(--accent-rgb), 0.3);
+    }
+}
+
+section.stats .stats-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+section.stats .stat {
+    position: relative;
+    margin: 0;
+    padding: 1.3rem 1rem; 
+}
+section.stats .stat h2, section.stats .stat p{
+    margin:0;
+    padding:0.2rem;
+}
+section.stats .stat h2{
+    font-size:1.5rem;
+}
+section.stats .stat:nth-child(odd)::after {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 20%;     
+    width: 1px;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+section.stats .stat:nth-child(n + 3) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media(min-width:1024px){
+    section.stats .stats-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    section.stats .stat:not(:last-child)::after {
+        position: absolute;
+        content: "";
+        left: 100%;
+        top: 20%;     
+        width: 1px;
+        height: 60%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    section.stats .stat:nth-child(n + 3) {
+    border:0;
+    }
+}
+

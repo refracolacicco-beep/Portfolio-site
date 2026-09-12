@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylefiles/style.css">
+    <link rel="stylesheet" href="../stylefiles/WebDev.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>WebDev</title>
 </head>
 <body>
@@ -16,15 +20,100 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="Linux.html">Linux</a></li>
-                <li><a href="WebDev.html">WebDev</a></li>
+                <li><a href="WebDev.html" class="important_text">WebDev</a></li>
                 <li><a href="C++.html">C++</a></li>
             </ul>
         </nav>
     </div>
 
+    <section class="hero">
+        <div class="background-dots"></div>
+            <h1>I build <span class="important_text">clean</span> and <span class="important_text">responsive</span> interfaces</h1>
+            <p class="subtitle">HTML, CSS, JavaScript &mdash; from layout to micro-interations</p>
+            <p class="css-example glass-panel">/* portfolio.css */ <span class="accent-color">.glass-panel</span> <span class="white">{ backdrop-filter: </span>blur(16px); <span class="white">}</span></p>
+    </section>
 
-    <br><br><br><br><h1 class="cool_text">Work in progress...</h1>
+    <section class="stack">
+        <p class="section-title">STACK</p>
+        <ul>
+            <li class="glass-panel">
+                <svg viewBox="0 0 16 16" class="icon" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="nonzero" clip-rule="nonzero" d="M3 1.5C2.86193 1.5 2.75 1.61193 2.75 1.75V11.3003C2.75 11.3896 2.79769 11.4722 2.87509 11.5168L7.73381 14.3194C7.80942 14.363 7.90231 14.364 7.97886 14.3221L13.1201 11.5048C13.2002 11.4609 13.25 11.3769 13.25 11.2856V1.75C13.25 1.61193 13.1381 1.5 13 1.5H3ZM1.25 1.75C1.25 0.783502 2.0335 0 3 0H13C13.9665 0 14.75 0.783503 14.75 1.75V11.2856C14.75 11.9248 14.4015 12.5131 13.841 12.8203L8.69968 15.6375C8.16383 15.9311 7.51363 15.924 6.98434 15.6187L2.12562 12.8162C1.58382 12.5037 1.25 11.9258 1.25 11.3003V1.75ZM5 4.25C5 3.83579 5.33579 3.5 5.75 3.5H10.3654C10.7796 3.5 11.1154 3.83579 11.1154 4.25C11.1154 4.66421 10.7796 5 10.3654 5H6.5V6.71154H10.3654C10.7796 6.71154 11.1154 7.04732 11.1154 7.46154V10.3462C11.1154 10.6302 10.9549 10.8899 10.7008 11.017L8.3931 12.1708C8.18196 12.2764 7.93343 12.2764 7.72228 12.1708L5.41459 11.017C5.1605 10.8899 5 10.6302 5 10.3462V9.76923C5 9.35502 5.33579 9.01923 5.75 9.01923C6.16421 9.01923 6.5 9.35502 6.5 9.76923V9.88263L8.05769 10.6615L9.61539 9.88263V8.21154H5.75C5.33579 8.21154 5 7.87575 5 7.46154V4.25Z" fill="currentColor"></path> </g></svg>
+                <div class="text">
+                <h3>HTML</h3>
+                <p>Semantic</p>
+                </div
+            </li>
+            <li class="glass-panel">
+                <svg class="icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="nonzero" clip-rule="nonzero" d="M3 1.60001C2.86193 1.60001 2.75 1.71193 2.75 1.85001V11.4003C2.75 11.4896 2.79769 11.5722 2.87509 11.6168L7.73381 14.4194C7.80942 14.463 7.90231 14.464 7.97886 14.4221L13.1201 11.6048C13.2002 11.5609 13.25 11.4769 13.25 11.3856V1.85001C13.25 1.71193 13.1381 1.60001 13 1.60001H3ZM1.25 1.85001C1.25 0.883508 2.0335 0.100006 3 0.100006H13C13.9665 0.100006 14.75 0.883509 14.75 1.85001V11.3856C14.75 12.0248 14.4015 12.6131 13.841 12.9203L8.69968 15.7375C8.16383 16.0311 7.51363 16.024 6.98434 15.7187L2.12562 12.9162C1.58382 12.6037 1.25 12.0258 1.25 11.4003V1.85001ZM5 4.35001C5 3.93579 5.33579 3.60001 5.75 3.60001H10.3654C10.7796 3.60001 11.1154 3.93579 11.1154 4.35001V10.4462C11.1154 10.7302 10.9549 10.9899 10.7008 11.117L8.3931 12.2708C8.18196 12.3764 7.93343 12.3764 7.72228 12.2708L5.41459 11.117C5.1605 10.9899 5 10.7302 5 10.4462V9.86924C5 9.45502 5.33579 9.11924 5.75 9.11924C6.16421 9.11924 6.5 9.45502 6.5 9.86924V9.98263L8.05769 10.7615L9.61539 9.98263V8.31154H7C6.58579 8.31154 6.25 7.97576 6.25 7.56154C6.25 7.14733 6.58579 6.81154 7 6.81154H9.61539V5.10001H5.75C5.33579 5.10001 5 4.76422 5 4.35001Z" fill="currentColor"></path> </g></svg>
+                <div class="text">
+                <h3>CSS</h3>
+                <p>Grid · Flexbox</p></div>
+            </li>
+            <li class="glass-panel">
+                <svg class="icon" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z"></path> </g></svg>
+                <div class="text">
+                <h3>Javascript</h3>
+                <p>Dom · Fetch</p></div>
+            </li>
+            <li class="glass-panel">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4142 3.82843C12.6332 3.04738 11.3668 3.04738 10.5858 3.82843L9.91421 4.5L11.482 6.06774C11.6472 6.02356 11.8208 6 12 6C13.1046 6 14 6.89543 14 8C14 8.17916 13.9764 8.35282 13.9323 8.51804L15.982 10.5677C16.1472 10.5236 16.3208 10.5 16.5 10.5C17.6046 10.5 18.5 11.3954 18.5 12.5C18.5 13.6046 17.6046 14.5 16.5 14.5C15.3954 14.5 14.5 13.6046 14.5 12.5C14.5 12.3208 14.5236 12.1472 14.5677 11.982L13 10.4142V15.2676C13.5978 15.6134 14 16.2597 14 17C14 18.1046 13.1046 19 12 19C10.8954 19 10 18.1046 10 17C10 16.2597 10.4022 15.6134 11 15.2676V9.73244C10.4022 9.38663 10 8.74028 10 8C10 7.82084 10.0236 7.64718 10.0677 7.48196L8.5 5.91421L3.82843 10.5858C3.04738 11.3668 3.04738 12.6332 3.82843 13.4142L10.5858 20.1716C11.3668 20.9526 12.6332 20.9526 13.4142 20.1716L20.1716 13.4142C20.9526 12.6332 20.9526 11.3668 20.1716 10.5858L13.4142 3.82843ZM9.17157 2.41421C10.7337 0.852115 13.2663 0.852119 14.8284 2.41422L21.5858 9.17157C23.1479 10.7337 23.1479 13.2663 21.5858 14.8284L14.8284 21.5858C13.2663 23.1479 10.7337 23.1479 9.17157 21.5858L2.41421 14.8284C0.852115 13.2663 0.852119 10.7337 2.41422 9.17157L9.17157 2.41421Z" fill="currentColor"></path> </g></svg>
+                <div class="text">
+                <h3>Git</h3>
+                <p>Versioning</p></div>
+            </li>
+        </ul>
+    </section>
 
-    
+    <section class="projects">
+        <p class="section-title">PROJECTS</p>
+        <a href="https://github.com/refracolacicco-beep/Portfolio-site" class="card-container mobile" target="_blank">
+            <div class="card">
+                <img src="../Images/home.png">
+                <div class="card-overlay">
+                    <h3>Personal Portfolio</h3>
+                    <p class="accent-color">Glassmorphism · Cloudflare</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="project-container desktop glass-panel">
+            <img src="../Images/home.png">
+            <div class="text">
+                <p class="whatsit glowing-cyan-btn">Main project</p>
+                <h2 class="project-title">Personal Portfolio</h2>
+                <p>Designed and built from scratch with a modern glassmorphism aesthetic, featuring subtle blur effects, cyan glow accents, and a fully responsive multi-breakpoint layout. Deployed on Cloudflare Pages with automated CI/CD through GitHub.</p>
+                <div class="tags">
+                    <p class="tag white">HTML5</p>
+                    <p class="tag white">CCS3</p>
+                    <p class="tag white">Cloudflare Pages</p>
+                    <p class="tag white">Responsive Design</p>
+                </div>
+                <a href=""><p class="btn glowing-cyan-btn">GitHub</p></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats">
+        <p>STATS</p>
+        <div class="stats-container glass-panel">
+            <div class="stat">
+                <h2 class="important_text">3</h2>
+                <p>projects</p>
+            </div>
+            <div class="stat">
+                <h2 class="important_text">40+</h2>
+                <p>hours of CSS</p>
+            </div>
+            <div class="stat">
+                <h2 class="important_text">5</h2>
+                <p>reusable components</p>
+            </div>
+            <div class="stat">
+                <h2 class="important_text">100%</h2>
+                <p>responsive</p>
+            </div>    
+        </div>
+    </section>
 </body>
 </html>
