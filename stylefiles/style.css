@@ -9,7 +9,6 @@ html, body {
 html {
     scroll-behavior: smooth;
 }
-
 body {
     color: white;
     font-family: "Geist", "Space Grotesk", sans-serif;
@@ -158,7 +157,7 @@ hr{
     display: grid;
     aspect-ratio: 3/4;
     border-radius: 40px;
-    overflow:hidden;
+    overflow:clip;
     grid-template-areas: "stack";
     place-items: end;
 
